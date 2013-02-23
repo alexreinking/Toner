@@ -1,0 +1,10 @@
+The Toner
+---------
+
+This program performs a cosine similarity test on tonal data collected via microphone.
+
+This is a tool I created that optimizes the timbre (tone) of an instrument, much in the way one uses a tuner to optimize pitch. I believe this to be a first-of-its-kind, real-time timbre comparison tool. Using Fourier analysis techniques, it operates by measuring the overtones and their relative powers of an instrumentalist’s tuning note to create a profile of the tone of woodwind instruments. Students play into a microphone to receive feedback regarding the similarity of their tone to that of a previously-recorded sample.
+
+The samples were collected from the principal players of the Eden Prairie High School Wind Ensemble.
+
+(C) Alex Reinking 2012-2013

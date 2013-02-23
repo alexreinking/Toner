@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDialog</class>
+ <widget class="QDialog" name="MainDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Toner (C) 2012 Alex Reinking</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="baseLayout">
+     <item>
+      <widget class="QLabel" name="baseLabel">
+       <property name="text">
+        <string>Base Frequency:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="baseNoteLabel">
+       <property name="text">
+        <string>A4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="baseFreqLabel">
+       <property name="text">
+        <string>440 Hz</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="overtone1Layout">
+     <item>
+      <widget class="QLabel" name="overtone1Label">
+       <property name="text">
+        <string>Overtone 1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="overtone1NoteLabel">
+       <property name="text">
+        <string>B4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="overtone1FreqLabel">
+       <property name="text">
+        <string>460 Hz</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="overtone2Layout">
+     <item>
+      <widget class="QLabel" name="overtone2Label">
+       <property name="text">
+        <string>Overtone 2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="overtone2NoteLabel">
+       <property name="text">
+        <string>C4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="overtone2FreqLabel">
+       <property name="text">
+        <string>470 Hz</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="overtone3Layout">
+     <item>
+      <widget class="QLabel" name="overtone3Label">
+       <property name="text">
+        <string>Overtone 3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="overtone3NoteLabel">
+       <property name="text">
+        <string>D4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="overtone3FreqLabel">
+       <property name="text">
+        <string>480 Hz</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="percentLayout">
+     <item>
+      <widget class="QLabel" name="percentLabel">
+       <property name="text">
+        <string>Similarity:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="percentErrorBar">
+       <property name="value">
+        <number>50</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="controlsLayout">
+     <item>
+      <widget class="QComboBox" name="deviceCombo"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="instrumentCombo"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="startButton">
+       <property name="text">
+        <string>Suspend Recording</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Press Ctrl+L for logging. Press Ctrl+A for sample analysis.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="advancedFrame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="logCheckBox">
+        <property name="text">
+         <string>Log Data?</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="logEdit">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="logButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="instrumentNameEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="instrumentNameLabel">
+        <property name="text">
+         <string>Instrument Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="reloadButton">
+        <property name="text">
+         <string>Reload</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
